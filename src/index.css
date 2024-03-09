@@ -1,0 +1,20 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+.sidebar ul li:hover {
+  background-color: #757575;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.active {
+  background-color: #757575;
+  color: white;
+}
+.dashboardBg {
+  background-color: #c7c8c9;
+}
