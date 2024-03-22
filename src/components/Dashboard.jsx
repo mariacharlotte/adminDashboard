@@ -1,6 +1,8 @@
 import React from "react";
+import LineChart from "./LineChart";
+import PieChart from "./PieChart";
 
-const Dashboard = ({ chartData }) => {
+const Dashboard = () => {
   return (
     <div className="dashboardBg py-4 px-2">
       <div className="d-flex">
@@ -37,7 +39,14 @@ const Dashboard = ({ chartData }) => {
         </div>
       </div>
 
-      <div className="ms-1 my-4"></div>
+      <div className="ms-1 my-4 d-flex gap-4 justify-content-between">
+        <div className="bg-white w-100">
+          <LineChart />
+        </div>
+        <div className="bg-white w-50">
+          <PieChart />
+        </div>
+      </div>
     </div>
   );
 };
